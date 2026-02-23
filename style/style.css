@@ -4,5 +4,18 @@ nav {
 }
 
 body {
-    background: url(/images/World_Map_29.webp), no-repeat, cover, color rgb(0, 0, 0)
+    background-image: url(/images/World_Map_29.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(87, 87, 87, 0.884);
+}
+
+main{
+    color: red;
 }
