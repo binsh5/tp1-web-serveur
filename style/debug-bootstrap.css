@@ -1,0 +1,52 @@
+/* ============================= */
+/* ===== BOOTSTRAP DEBUG ====== */
+/* ============================= */
+
+/* CONTAINERS */
+.container,
+.container-fluid {
+    outline: 3px solid red !important;
+    background-color: rgba(255, 0, 0, 0.05);
+}
+
+/* ROWS */
+.row {
+    outline: 3px dotted blue !important;
+    background-color: rgba(0, 0, 255, 0.05);
+}
+
+/* COLUMNS */
+.col,
+[class*="col-"] {
+    outline: 3px dashed green !important;
+    background-color: rgba(0, 255, 0, 0.08);
+}
+
+/* SHOW PADDING */
+.container *,
+.row *,
+.col,
+[class*="col-"] {
+    box-sizing: border-box;
+}
+
+/* VISUALIZE MARGINS */
+.container,
+.row,
+.col,
+[class*="col-"] {
+    position: relative;
+}
+
+/* Optional: show padding visually */
+.col,
+[class*="col-"] {
+    padding: 15px !important;
+}
+
+* {
+    outline-offset: -1px;
+}
+
+/* LA LIGNE A METTRE DANS LE HEAD */
+/*<link rel="stylesheet" href="/style/debug-bootstrap.css">*/
