@@ -1,0 +1,18 @@
+.MainContainer {
+    padding-top: 3em;
+    padding-right: 4em;
+    padding-left: 4em;
+    color: black;
+}
+
+.menu-filtre {
+    display: none;
+    background-color: rgb(60, 60, 60);
+    padding: 1em;
+    border-radius: 0.5em;
+    margin-top: 0.5em;
+}
+
+#toggle-filtre:checked+.btn-filtre+.menu-filtre {
+    display: block;
+}
