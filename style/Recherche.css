@@ -16,3 +16,24 @@
 #toggle-filtre:checked+.btn-filtre+.menu-filtre {
     display: block;
 }
+
+.btn-filtre {
+    display: inline-block;
+    background-color: rgb(60, 60, 60);
+    height: 38px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0.5em;
+}
+
+.ImageContainer {
+    background-color: rgb(60, 60, 60);
+    margin-top: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+.ImageContainer>.row {
+    padding-top: 2em;
+    padding-left: 2em;
+}

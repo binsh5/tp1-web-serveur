@@ -33,61 +33,103 @@
         </nav>
     </header>
 
-    <main class="container-fluid MainContainer">
+    <main>
+        <div class="container-fluid MainContainer">
+            <form action="https://www.w3schools.com/action_page.php" class="row">
+                <div class="col-3"></div>
 
-        <form action="https://www.w3schools.com/action_page.php" class="row">
-            <div class="col-3"></div>
+                <div class="col-6">
+                    <input class="form-control" type="text" name="recherche" id="recherche">
+                </div>
 
-            <div class="col-6">
-                <input class="form-control" type="text" name="recherche" id="recherche">
-            </div>
+                <div class="col">
+                    <input type="checkbox" id="toggle-filtre" hidden>
+                    <label class="form-label btn-filtre" for="toggle-filtre">Filtre</label>
+                    <div class="menu-filtre">
 
-            <div class="col">
-                <input type="checkbox" id="toggle-filtre" hidden>
-                <label class="form-label btn-filtre" for="toggle-filtre">Filtre</label>
-                <div class="menu-filtre">
+                        <label class="form-label" for="proprieteTexte">Propriete texte</label>
+                        <input class="form-control" type="text" name="proprieteTexte" id="proprieteTexte"
+                            placeholder="Propriete texte">
+                        <br>
 
-                    <label class="form-label" for="proprieteTexte">Propriete texte</label>
-                    <input class="form-control" type="text" name="proprieteTexte" id="proprieteTexte"
-                        placeholder="Propriete texte">
-                    <br>
+                        <label class="form-label" for="proprieteInt">propriete int</label>
+                        <input class="form-control" type="text" name="proprieteInt" id="proprieteInt"
+                            placeholder="propriete int">
+                        <br>
 
-                    <label class="form-label" for="proprieteInt">propriete int</label>
-                    <input class="form-control" type="text" name="proprieteInt" id="proprieteInt"
-                        placeholder="propriete int">
-                    <br>
+                        <label class="form-label" for="PersonnageVedette">Personnage vedette</label>
+                        <select class="form-control" name="PersonnageVedette" id="PersonnageVedette">
+                            <option value="PeuImporte">Peu importe</option>
+                            <option value="Oui">Oui</option>
+                            <option value="Non">Non</option>
+                        </select>
+                        <br>
 
-                    <label class="form-label" for="PersonnageVedette">Personnage vedette</label>
-                    <select class="form-control" name="PersonnageVedette" id="PersonnageVedette">
-                        <option value="PeuImporte">Peu importe</option>
-                        <option value="Oui">Oui</option>
-                        <option value="Non">Non</option>
-                    </select>
-                    <br>
+                        <label for="">Noxus</label>
+                        <input type="checkbox" name="checkboxNoxus" id="checkboxNoxus">
+                        <br>
 
-                    <label for="">Noxus</label>
-                    <input type="checkbox" name="checkboxNoxus" id="checkboxNoxus">
-                    <br>
+                        <label for="">Shurima</label>
+                        <input type="checkbox" name="checkboxShurima" id="checkboxShurima">
+                        <br>
 
-                    <label for="">Shurima</label>
-                    <input type="checkbox" name="checkboxShurima" id="checkboxShurima">
-                    <br>
+                        <label for="">Demacia</label>
+                        <input type="checkbox" name="checkboxDemacia" id="checkboxDemacia">
+                        <br>
 
-                    <label for="">Demacia</label>
-                    <input type="checkbox" name="checkboxDemacia" id="checkboxDemacia">
-                    <br>
-
-                    <button class="btn btn-primary" type="submit">Rechercher</button>
-                    <button class="btn btn-secondary" type="reset">Effacer</button>
+                        <button class="btn btn-primary" type="submit">Rechercher</button>
+                        <button class="btn btn-secondary" type="reset">Effacer</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container ImageContainer">
+            <div class="row">
+                <div class="col">
+                    <img class="img-fluid" src="/images/Darius_0.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img class="img-fluid" src="/images/88cd73f98027db3d39a2bce3caf613c02e329dc0-1920x1133.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img class="img-fluid" src="/images/Swain_0.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img class="img-fluid" src="/images/Leblanc_0.jpg" alt="">
                 </div>
             </div>
-        </form>
 
-        <div class="row">
-            <div class="col">
+            <div class="row">
+                <div class="col">
+                    <img class="img-fluid" src="/images/Garen_0.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img class="img-fluid" src="/images/JarvanIV_0.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img class="img-fluid" src="/images/Lux_0.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img class="img-fluid" src="/images/XinZhao_0.jpg" alt="">
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col">
+                    <img class="img-fluid" src="/images/Azir_0.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img class="img-fluid" src="/images/Nasus_0.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img class="img-fluid" src="/images/Rengar_0.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img class="img-fluid" src="/images/Xerath_0.jpg" alt="">
+                </div>
             </div>
         </div>
+
     </main>
 
     <footer class="mt-auto container-fluid">
