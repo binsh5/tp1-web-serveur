@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8" />
@@ -34,17 +34,97 @@
     </header>
 
     <main>
+
         <div class="container-fluid MainContainer">
             <form action="https://www.w3schools.com/action_page.php" class="row">
                 <div class="col-3"></div>
 
                 <div class="col-6">
-                    <input class="form-control" type="text" name="recherche" id="recherche">
+                    <input class="form-control" type="text" name="recherche" id="recherche" placeholder="Recherche">
                 </div>
 
                 <div class="col">
-                    <input type="checkbox" id="toggle-filtre" hidden>
                     <label class="form-label btn-filtre" for="toggle-filtre">Filtre</label>
+                </div>
+            </form>
+        </div>
+        <input type="checkbox" id="toggle-filtre" hidden>
+        <div class="container ImageContainer">
+
+            <div class="row">
+
+                <div class="col image-col">
+
+                    <div class="row">
+
+                        <div class="col">
+                            <p class="TitreImage">Darius</p>
+                            <img class="img-fluid" src="/images/Darius_0.jpg" alt="">
+                        </div>
+                        <div class="col">
+                            <p class="TitreImage">Ambessa</p>
+                            <img class="img-fluid" src="/images/88cd73f98027db3d39a2bce3caf613c02e329dc0-1920x1133.jpg"
+                                alt="">
+                        </div>
+                        <div class="col">
+                            <p class="TitreImage">Swain</p>
+                            <img class="img-fluid" src="/images/Swain_0.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col">
+                            <p class="TitreImage">Leblanc</p>
+                            <img class="img-fluid" src="/images/Leblanc_0.jpg" alt="">
+                        </div>
+                        <div class="col">
+                            <p class="TitreImage">Garen</p>
+                            <img class="img-fluid" src="/images/Garen_0.jpg" alt="">
+                        </div>
+                        <div class="col">
+                            <p class="TitreImage">JarvanIV</p>
+                            <img class="img-fluid" src="/images/JarvanIV_0.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col">
+                            <p class="TitreImage">Lux</p>
+                            <img class="img-fluid" src="/images/Lux_0.jpg" alt="">
+                        </div>
+                        <div class="col">
+                            <p class="TitreImage">Xin Zhao</p>
+                            <img class="img-fluid" src="/images/XinZhao_0.jpg" alt="">
+                        </div>
+                        <div class="col">
+                            <p class="TitreImage">Azir</p>
+                            <img class="img-fluid" src="/images/Azir_0.jpg" alt="">
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col">
+                            <p class="TitreImage">Nasus</p>
+                            <img class="img-fluid" src="/images/Nasus_0.jpg" alt="">
+                        </div>
+                        <div class="col">
+                            <p class="TitreImage">Rengar</p>
+                            <img class="img-fluid" src="/images/Rengar_0.jpg" alt="">
+                        </div>
+                        <div class="col">
+                            <p class="TitreImage">Xerath</p>
+                            <img class="img-fluid" src="/images/Xerath_0.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col filtre-col">
                     <div class="menu-filtre">
 
                         <label class="form-label" for="proprieteTexte">Propriete texte</label>
@@ -65,69 +145,24 @@
                         </select>
                         <br>
 
-                        <label for="">Noxus</label>
-                        <input type="checkbox" name="checkboxNoxus" id="checkboxNoxus">
+                        <label for="checkboxNoxus">Noxus</label>
+                        <input type="checkbox" name="checkboxNoxus" id="checkboxNoxus" checked>
                         <br>
 
-                        <label for="">Shurima</label>
-                        <input type="checkbox" name="checkboxShurima" id="checkboxShurima">
+                        <label for="checkboxShurima">Shurima</label>
+                        <input type="checkbox" name="checkboxShurima" id="checkboxShurima" checked>
                         <br>
 
-                        <label for="">Demacia</label>
-                        <input type="checkbox" name="checkboxDemacia" id="checkboxDemacia">
+                        <label for="checkboxDemacia">Demacia</label>
+                        <input type="checkbox" name="checkboxDemacia" id="checkboxDemacia" checked>
                         <br>
 
                         <button class="btn btn-primary" type="submit">Rechercher</button>
                         <button class="btn btn-secondary" type="reset">Effacer</button>
                     </div>
                 </div>
-            </form>
-        </div>
-        <div class="container ImageContainer">
-            <div class="row">
-                <div class="col">
-                    <img class="img-fluid" src="/images/Darius_0.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img class="img-fluid" src="/images/88cd73f98027db3d39a2bce3caf613c02e329dc0-1920x1133.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img class="img-fluid" src="/images/Swain_0.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img class="img-fluid" src="/images/Leblanc_0.jpg" alt="">
-                </div>
             </div>
 
-            <div class="row">
-                <div class="col">
-                    <img class="img-fluid" src="/images/Garen_0.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img class="img-fluid" src="/images/JarvanIV_0.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img class="img-fluid" src="/images/Lux_0.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img class="img-fluid" src="/images/XinZhao_0.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    <img class="img-fluid" src="/images/Azir_0.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img class="img-fluid" src="/images/Nasus_0.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img class="img-fluid" src="/images/Rengar_0.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img class="img-fluid" src="/images/Xerath_0.jpg" alt="">
-                </div>
-            </div>
         </div>
 
     </main>

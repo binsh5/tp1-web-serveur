@@ -5,16 +5,37 @@
     color: black;
 }
 
-.menu-filtre {
-    display: none;
+.image-col {
+    flex: 0 0 100%;
+    max-width: 100%;
     background-color: rgb(60, 60, 60);
     padding: 1em;
     border-radius: 0.5em;
     margin-top: 0.5em;
+    transition: all 0.5s ease;
 }
 
-#toggle-filtre:checked+.btn-filtre+.menu-filtre {
-    display: block;
+.filtre-col {
+    flex: 0 0 0%;
+    max-width: 0%;
+    overflow: hidden;
+    color: white;
+    transition: all 0.5s ease;
+    opacity: 0;
+    max-height: 0%;
+    height: 0;
+}
+
+#toggle-filtre:checked~.ImageContainer .image-col {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+#toggle-filtre:checked~.ImageContainer .filtre-col {
+    flex: 0 0 25%;
+    max-width: 25%;
+    opacity: 1;
+    height: auto;
 }
 
 .btn-filtre {
@@ -24,6 +45,7 @@
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 0.5em;
+    color: white;
 }
 
 .ImageContainer {
@@ -31,9 +53,27 @@
     margin-top: 2em;
     padding-right: 2em;
     padding-bottom: 2em;
+    margin-bottom: 5em;
+    border-radius: 0.5em;
 }
 
 .ImageContainer>.row {
     padding-top: 2em;
     padding-left: 2em;
+}
+
+.TitreImage {
+    color: black;
+    background-color: rgba(110, 110, 110, 0.8);
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 0.3em;
+}
+
+.ImageContainer img {
+    border-radius: 0.5em;
+}
+
+#checkboxDemacia {
+    margin-bottom: 1.5em;
 }
