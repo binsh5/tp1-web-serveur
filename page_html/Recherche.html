@@ -2,13 +2,14 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="favicon" content="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1e830fc3b4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="/style/Recherche.css">
+    <title>Recherche</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -34,8 +35,9 @@
     </header>
 
     <main>
+        <input type="checkbox" id="toggle-filtre" hidden>
 
-        <div class="container-fluid MainContainer">
+        <div class="container ImageContainer pt-4">
             <form action="https://www.w3schools.com/action_page.php" class="row">
                 <div class="col-3"></div>
 
@@ -43,13 +45,10 @@
                     <input class="form-control" type="text" name="recherche" id="recherche" placeholder="Recherche">
                 </div>
 
-                <div class="col">
+                <div class="col" id="filtre">
                     <label class="form-label btn-filtre" for="toggle-filtre">Filtre</label>
                 </div>
             </form>
-        </div>
-        <input type="checkbox" id="toggle-filtre" hidden>
-        <div class="container ImageContainer">
 
             <div class="row">
 
@@ -57,68 +56,92 @@
 
                     <div class="row">
 
-                        <div class="col">
-                            <p class="TitreImage">Darius</p>
-                            <img class="img-fluid" src="/images/Darius_0.jpg" alt="">
+                        <div class="col-12 col-md mb-3 enfants">
+                            <a href="/page_html/Detail.html">
+                                <p class="TitreImage">Darius</p>
+                                <img class="img-fluid" src="/images/Darius_0.jpg" alt="">
+                            </a>
                         </div>
-                        <div class="col">
-                            <p class="TitreImage">Ambessa</p>
-                            <img class="img-fluid" src="/images/88cd73f98027db3d39a2bce3caf613c02e329dc0-1920x1133.jpg"
-                                alt="">
+                        <div class="col-12 col-md mb-3 enfants">
+                            <a href="/page_html/Detail.html">
+                                <p class="TitreImage">Ambessa</p>
+                                <img class="img-fluid"
+                                    src="/images/88cd73f98027db3d39a2bce3caf613c02e329dc0-1920x1133.jpg" alt="">
+                            </a>
                         </div>
-                        <div class="col">
-                            <p class="TitreImage">Swain</p>
-                            <img class="img-fluid" src="/images/Swain_0.jpg" alt="">
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col">
-                            <p class="TitreImage">Leblanc</p>
-                            <img class="img-fluid" src="/images/Leblanc_0.jpg" alt="">
-                        </div>
-                        <div class="col">
-                            <p class="TitreImage">Garen</p>
-                            <img class="img-fluid" src="/images/Garen_0.jpg" alt="">
-                        </div>
-                        <div class="col">
-                            <p class="TitreImage">JarvanIV</p>
-                            <img class="img-fluid" src="/images/JarvanIV_0.jpg" alt="">
+                        <div class="col-12 col-md enfants">
+                            <a href="/page_html/Detail.html">
+                                <p class="TitreImage">Swain</p>
+                                <img class="img-fluid" src="/images/Swain_0.jpg" alt="">
+                            </a>
                         </div>
 
                     </div>
 
                     <div class="row">
 
-                        <div class="col">
-                            <p class="TitreImage">Lux</p>
-                            <img class="img-fluid" src="/images/Lux_0.jpg" alt="">
+                        <div class="col-12 col-md mb-3 enfants">
+                            <a href="/page_html/Detail.html">
+                                <p class="TitreImage">Leblanc</p>
+                                <img class="img-fluid" src="/images/Leblanc_0.jpg" alt="">
+                            </a>
                         </div>
-                        <div class="col">
-                            <p class="TitreImage">Xin Zhao</p>
-                            <img class="img-fluid" src="/images/XinZhao_0.jpg" alt="">
+                        <div class="col-12 col-md mb-3 enfants">
+                            <a href="/page_html/Detail.html">
+                                <p class="TitreImage">Garen</p>
+                                <img class="img-fluid" src="/images/Garen_0.jpg" alt="">
+                            </a>
                         </div>
-                        <div class="col">
-                            <p class="TitreImage">Azir</p>
-                            <img class="img-fluid" src="/images/Azir_0.jpg" alt="">
+                        <div class="col-12 col-md mb-3 enfants">
+                            <a href="/page_html/Detail.html">
+                                <p class="TitreImage">JarvanIV</p>
+                                <img class="img-fluid" src="/images/JarvanIV_0.jpg" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-12 col-md mb-3 enfants">
+                            <a href="/page_html/Detail.html">
+                                <p class="TitreImage">Lux</p>
+                                <img class="img-fluid" src="/images/Lux_0.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-12 col-md mb-3 enfants">
+                            <a href="/page_html/Detail.html">
+                                <p class="TitreImage">Xin Zhao</p>
+                                <img class="img-fluid" src="/images/XinZhao_0.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-12 col-md mb-3 enfants">
+                            <a href="/page_html/Detail.html">
+                                <p class="TitreImage">Azir</p>
+                                <img class="img-fluid" src="/images/Azir_0.jpg" alt="">
+                            </a>
                         </div>
 
                     </div>
                     <div class="row">
 
-                        <div class="col">
-                            <p class="TitreImage">Nasus</p>
-                            <img class="img-fluid" src="/images/Nasus_0.jpg" alt="">
+                        <div class="col-12 col-md mb-3 enfants">
+                            <a href="/page_html/Detail.html">
+                                <p class="TitreImage">Nasus</p>
+                                <img class="img-fluid" src="/images/Nasus_0.jpg" alt="">
+                            </a>
                         </div>
-                        <div class="col">
-                            <p class="TitreImage">Rengar</p>
-                            <img class="img-fluid" src="/images/Rengar_0.jpg" alt="">
+                        <div class="col-12 col-md mb-3 enfants">
+                            <a href="/page_html/Detail.html">
+                                <p class="TitreImage">Rengar</p>
+                                <img class="img-fluid" src="/images/Rengar_0.jpg" alt="">
+                            </a>
                         </div>
-                        <div class="col">
-                            <p class="TitreImage">Xerath</p>
-                            <img class="img-fluid" src="/images/Xerath_0.jpg" alt="">
+                        <div class="col-12 col-md enfants">
+                            <a href="/page_html/Detail.html">
+                                <p class="TitreImage">Xerath</p>
+                                <img class="img-fluid" src="/images/Xerath_0.jpg" alt="">
+                            </a>
                         </div>
 
                     </div>
@@ -126,39 +149,40 @@
 
                 <div class="col filtre-col">
                     <div class="menu-filtre">
+                        <form action="https://www.w3schools.com/action_page.php">
+                            <label class="form-label" for="proprieteTexte">Propriete texte</label>
+                            <input class="form-control" type="text" name="proprieteTexte" id="proprieteTexte"
+                                placeholder="Propriete texte">
+                            <br>
 
-                        <label class="form-label" for="proprieteTexte">Propriete texte</label>
-                        <input class="form-control" type="text" name="proprieteTexte" id="proprieteTexte"
-                            placeholder="Propriete texte">
-                        <br>
+                            <label class="form-label" for="proprieteInt">propriete int</label>
+                            <input class="form-control" type="text" name="proprieteInt" id="proprieteInt"
+                                placeholder="propriete int">
+                            <br>
 
-                        <label class="form-label" for="proprieteInt">propriete int</label>
-                        <input class="form-control" type="text" name="proprieteInt" id="proprieteInt"
-                            placeholder="propriete int">
-                        <br>
+                            <label class="form-label" for="PersonnageVedette">Personnage vedette</label>
+                            <select class="form-control" name="PersonnageVedette" id="PersonnageVedette">
+                                <option value="PeuImporte">Peu importe</option>
+                                <option value="Oui">Oui</option>
+                                <option value="Non">Non</option>
+                            </select>
+                            <br>
 
-                        <label class="form-label" for="PersonnageVedette">Personnage vedette</label>
-                        <select class="form-control" name="PersonnageVedette" id="PersonnageVedette">
-                            <option value="PeuImporte">Peu importe</option>
-                            <option value="Oui">Oui</option>
-                            <option value="Non">Non</option>
-                        </select>
-                        <br>
+                            <label for="checkboxNoxus">Noxus</label>
+                            <input type="checkbox" name="checkboxNoxus" id="checkboxNoxus" checked>
+                            <br>
 
-                        <label for="checkboxNoxus">Noxus</label>
-                        <input type="checkbox" name="checkboxNoxus" id="checkboxNoxus" checked>
-                        <br>
+                            <label for="checkboxShurima">Shurima</label>
+                            <input type="checkbox" name="checkboxShurima" id="checkboxShurima" checked>
+                            <br>
 
-                        <label for="checkboxShurima">Shurima</label>
-                        <input type="checkbox" name="checkboxShurima" id="checkboxShurima" checked>
-                        <br>
+                            <label for="checkboxDemacia">Demacia</label>
+                            <input type="checkbox" name="checkboxDemacia" id="checkboxDemacia" checked>
+                            <br>
 
-                        <label for="checkboxDemacia">Demacia</label>
-                        <input type="checkbox" name="checkboxDemacia" id="checkboxDemacia" checked>
-                        <br>
-
-                        <button class="btn btn-primary" type="submit">Rechercher</button>
-                        <button class="btn btn-secondary" type="reset">Effacer</button>
+                            <button class="btn btn-primary" type="submit">Rechercher</button>
+                            <button class="btn btn-secondary" type="reset">Effacer</button>
+                        </form>
                     </div>
                 </div>
             </div>

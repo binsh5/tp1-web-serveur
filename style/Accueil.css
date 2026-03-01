@@ -3,6 +3,14 @@
     color: black;
     transition: 0.3s;
     border-radius: 1em;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+@media (min-width : 768px) {
+    .MainCol {
+        max-height: 750px;
+    }
 }
 
 .MainContainer {
@@ -57,4 +65,9 @@
     border-radius: 1em;
     display: block;
     text-align: center;
+}
+
+.Liens {
+    text-decoration: none;
+    color: inherit;
 }
