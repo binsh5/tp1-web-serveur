@@ -103,7 +103,7 @@ footer {
 /* Recherche */
 
 .MainContainerRecherche {
-    background-color: rgb(60, 60, 60);
+    background-color: rgba(110, 110, 110, 0.8);
     margin-top: 4em;
     padding-right: 2em;
     margin-bottom: 5em;
@@ -121,7 +121,6 @@ footer {
 .ContainerEnfants {
     flex: 0 0 100%;
     max-width: 100%;
-    background-color: rgb(60, 60, 60);
     padding: 1em;
     border-radius: 0.5em;
     margin-top: 0.5em;
@@ -143,6 +142,7 @@ footer {
     border-color: black;
     border-radius: 0.5em;
     padding-bottom: 10px;
+    background-color: rgb(60, 60, 60);
 }
 
 .enfants>a {
@@ -171,6 +171,17 @@ footer {
     border-width: 3px;
     border-color: black;
     border-radius: 0.5em;
+    background-color: rgb(60, 60, 60);
+}
+
+.MenuFiltre {
+    background-color: rgb(60, 60, 60);
+    border: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 0.5em;
+    padding: 1em;
+    margin-top: 24px;
 }
 
 #checkboxDemacia {
@@ -187,4 +198,24 @@ footer {
     max-width: 25%;
     opacity: 1;
     height: auto;
+}
+
+/* Detail */
+
+.MainContainerDetail {
+    background-color: rgba(110, 110, 110, 0.8);
+    margin-top: 4em;
+    margin-bottom: 5em;
+    border-radius: 0.5em;
+}
+
+.DetailEnfant {
+    background-color: rgb(80, 80, 80);
+    color: black;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+.DetailEnfant>img {
+    border-radius: 0.5em;
 }
