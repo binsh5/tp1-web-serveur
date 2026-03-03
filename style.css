@@ -229,10 +229,6 @@ footer {
     border-radius: 0.5em;
 }
 
-table {
-    caption-side: top;
-}
-
 caption {
     color: black;
     background-color: rgb(80, 80, 80);
@@ -242,15 +238,13 @@ caption {
     text-align: center;
 }
 
-
 td {
     width: 25%;
-    height: 6em;
     vertical-align: middle;
     text-align: center;
 }
 
-td>.img-fluid {
-    height: 100%;
-
+td>a {
+    text-decoration: none;
+    color: inherit;
 }
