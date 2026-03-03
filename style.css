@@ -210,6 +210,19 @@ footer {
     max-width: 25%;
     opacity: 1;
     height: auto;
+    max-height: none;
+}
+
+@media (max-width: 768px) {
+    #toggle-filtre:checked~.MainContainerRecherche .ContainerFiltre {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #toggle-filtre:checked~.MainContainerRecherche .ContainerEnfants {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 /* Detail */
