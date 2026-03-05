@@ -214,15 +214,33 @@ footer {
 }
 
 @media (max-width: 991.98px) {
+    .MainContainerRecherche {
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+
+    .MainContainerRecherche>.row {
+        padding-left: 0;
+    }
+
+    #filtre {
+        margin-top: 0.5em;
+    }
+
+    .btn-filtre {
+        width: 100%;
+        text-align: center;
+    }
+
     #toggle-filtre:checked~.MainContainerRecherche .ContainerFiltre {
         order: -1;
-        flex: 0 0 100%;
-        max-width: 100%;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
     }
 
     #toggle-filtre:checked~.MainContainerRecherche .ContainerEnfants {
-        flex: 0 0 100%;
-        max-width: 100%;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
     }
 }
 
