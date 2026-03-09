@@ -213,7 +213,7 @@ footer {
     max-height: none;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 768px) {
     .MainContainerRecherche {
         padding-right: 1em;
         padding-left: 1em;
@@ -233,7 +233,6 @@ footer {
     }
 
     #toggle-filtre:checked~.MainContainerRecherche .ContainerFiltre {
-        order: -1;
         flex: 0 0 100% !important;
         max-width: 100% !important;
     }
