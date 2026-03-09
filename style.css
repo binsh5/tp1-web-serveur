@@ -233,6 +233,7 @@ footer {
     }
 
     #toggle-filtre:checked~.MainContainerRecherche .ContainerFiltre {
+        order: -1;
         flex: 0 0 100% !important;
         max-width: 100% !important;
     }
