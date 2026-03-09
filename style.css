@@ -1,5 +1,6 @@
 nav {
     position: sticky;
+    /* LA POSITION STICKY VA RESTER PEU IMPORTE LA SITUATION A LA MEME PLACE SUR LA PAGE DANS CE CAS SI AU HAUT DE LA PAGE */
     top: 0;
     z-index: 1000;
     background-color: black;
@@ -132,6 +133,7 @@ footer {
 
 .ContainerEnfants {
     flex: 0 0 100%;
+    /* FLEX EST LA PROPRIETER UTILISER PAR BOOTSTAP POUR FAIRE LES COL ALORS CA PERMET DE MODIFIER A LA MAIN LA LARGEUR DES COL */
     max-width: 100%;
     padding: 1em;
     border-radius: 0.5em;
@@ -234,6 +236,7 @@ footer {
 
     #toggle-filtre:checked~.MainContainerRecherche .ContainerFiltre {
         order: -1;
+        /* CHANGER L'ORDRE DES ELEMENTS */
         flex: 0 0 100% !important;
         max-width: 100% !important;
     }
